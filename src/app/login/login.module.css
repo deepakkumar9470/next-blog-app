@@ -1,0 +1,38 @@
+.container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 60px;   
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--softBg);
+    padding:150px 200px; 
+    gap: 50px;
+    border-radius: 10px;
+}
+
+.socialButton{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+   padding: 20px;
+   border-radius: 5px;
+   border: none;
+   color: white;
+   font-weight: bold;
+   cursor: pointer;  
+}
+.socialButton:first-child{
+    background-color: #ff5555;
+}
+.socialButton:nth-child(2){
+    background-color: #111;
+}
+.socialButton:nth-child(3){
+    background-color: #087BEA;
+}
+

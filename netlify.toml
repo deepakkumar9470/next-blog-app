@@ -1,0 +1,6 @@
+[build]
+  command = "yarn run build"  # Replace with your build command if different
+  publish = "public"  # Set the directory to publish after building
+
+[build.environment]
+  NODE_VERSION = "18.17.1"  # Specify the Node.js version used in your project

@@ -1,0 +1,13 @@
+.content{
+  display: flex;
+  gap: 50px;
+}
+
+.title{
+    background-color: coral;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-transform: capitalize;
+}
+

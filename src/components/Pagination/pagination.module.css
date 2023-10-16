@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.button{
+    width: 100px;
+    border: none;
+    padding: 20px;
+    background-color: #040D12;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.button:disabled{
+    border-color: rgba(220,20,60, 0.473);
+    cursor: not-allowed;
+}
+.icon{
+    font-size: 40px;
+    font-weight: bold;
+}

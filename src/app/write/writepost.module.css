@@ -1,0 +1,116 @@
+.container{
+    
+}
+
+.image{
+    cursor: pointer;
+}
+
+.editor{
+  display: flex;
+  height: 700px;
+  gap: 20px;
+  position: relative;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid var(--textColor);
+
+}
+.addButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid var(--textColor);
+    border-color: #1aB917;
+}
+
+.textArea{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.input{
+    padding: 50px;
+    font-size: 64px;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    background-color: transparent;
+}
+
+.input::placeholder{
+    color: #b3b3b1;
+}
+.add{
+  display: flex;
+  gap: 40px;
+  background-color: var(--bg);
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  left: 50px;
+}
+
+.publishBtn{
+  background-color: #13aa52;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  outline: none;
+  padding: 10px 25px;
+  text-align: center;
+  transform: translateY(0);
+  transition: transform 150ms, box-shadow 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: absolute;
+  top: 80px;
+  right: 30px;
+}
+.publishBtn:hover{
+  background-color: #0b7e3b;
+  transform: translateY(-5px);
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.select{
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    margin-left: 50px;
+    width: max-content;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+.select option{
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 768px) {
+  .publishBtn {
+    padding: 10px 30px;
+  }
+}
+ 
