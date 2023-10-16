@@ -9,8 +9,6 @@ const Login = () => {
   const {data,status} = useSession()
   const router = useRouter()
 
-  console.log('from logon', data)
-
   if(status === "loading"){
     return <div className={styles.loading}>Loading....</div>
   }
