@@ -20,7 +20,6 @@ const WritePost = () => {
   const [file, setFile] = useState(null);
   const [media, setMedia] = useState("");
   const [catSlug, setCatSlug] = useState("");
-  const [isPublishing,setIsPublishing] = useState(false)
   
  
   useEffect(() => {
