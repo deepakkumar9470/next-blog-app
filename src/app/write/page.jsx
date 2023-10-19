@@ -8,7 +8,7 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { app } from "@/utils/firebase";
-import toast from "react-hot-toast";
+import {toast} from "react-hot-toast";
 
 const WritePost = () => {
   const {status} = useSession()
