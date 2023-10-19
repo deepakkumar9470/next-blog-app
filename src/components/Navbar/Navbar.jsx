@@ -15,7 +15,7 @@ const Navbar = () => {
         <Image src="/github.png" width={28} height={28} alt="github"/>
       </div>
       <div className={styles.logo}>
-        deepakblog
+        BlogWorld
       </div>
       <div className={styles.links}>
         <ToggleTheme/>

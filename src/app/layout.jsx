@@ -1,12 +1,18 @@
-import Navbar from '@/components/Navbar/Navbar'
+import dynamic from 'next/dynamic'
+// import Navbar from '@/components/Navbar/Navbar'
 import './globals.css'
-import {Poppins } from 'next/font/google'
-import Footer from '@/components/Footer/Footer'
+import {Raleway } from 'next/font/google'
+// import Footer from '@/components/Footer/Footer'
 import { ThemeContextProvider } from '@/context/ThemeContext'
 import ThemeProvider from '@/providers/ThemeProvider'
 import AuthProvider from '@/providers/AuthProvider'
-
-const poppins = Poppins({ subsets: ['latin'], weight : ["300", "400", "500", "600", "700"] })
+const DynamicNavbar = dynamic(() => import('@/components/Navbar/Navbar'), {
+  loading: () => <p>Loading...</p>,
+})
+const DynamicFooter = dynamic(() => import('@/components/Footer/Footer'), {
+  loading: () => <p>Loading...</p>,
+})
+const raleway = Raleway({ subsets: ['latin'], weight : ["300", "400", "500", "600", "700"] })
 
 export const metadata = {
   title: 'Blog App',
@@ -16,15 +22,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={raleway.className}>
         <AuthProvider>       
         <ThemeContextProvider>
           <ThemeProvider>         
         <div className="container">
           <div className="wrapper">
-            <Navbar/>
+            <DynamicNavbar/>
            {children}
-           <Footer/>
+           <DynamicFooter/>
           </div>
         </div>
         </ThemeProvider>
